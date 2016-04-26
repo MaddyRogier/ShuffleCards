@@ -1,14 +1,14 @@
 --[[----------------------------------
        Shuffle Deck of Cards 
-	   Designed on iPhone 6 
+       Designed on iPhone 6 
           Maddy Rogier
 ----------------------------------]]--
 
 --[[----------------------------------
 function - card design
 ----------------------------------]]-- 
-red   = {1, 0, 0}
-black = {0, 0, 0}
+red   = {.541,0,.051}
+black = {.055,.055,.055}
 
 suitFiles =  { "club.png", "diamond.png", "heart.png", "spade.png" }
 suitColors = {  black,      red,           red,         black }
@@ -46,8 +46,8 @@ local function render( card )
     
     local back = display.newRoundedRect(0,0,455,700,20)
 
-    back:setFillColor(.961,.925,.875)
-    back:setStrokeColor(.227,.2,.267)
+    back:setFillColor(1,1,1)
+    back:setStrokeColor(.055,.055,.055)
     back.strokeWidth = 2
     
     local suit = display.newImage(suitFile,-150,-180)

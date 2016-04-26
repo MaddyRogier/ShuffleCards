@@ -1,0 +1,19 @@
+settings = {
+    orientation = {
+        default = "landscapeLeft", 
+        supported = { "landscapeLeft" }
+    },
+        
+    iphone = {
+        plist = {
+            CFBundleDisplayName = "My Corona App",
+            CFBundleName = "My Corona App",
+            CFBundleIconFiles = {},  -- Required
+            UILaunchImages = {},     -- Required
+            UIApplicationExitsOnSuspend = false,
+            UIPrerenderedIcon = true,
+            UIStatusBarHidden = true,
+            MinimumOSVersion = "7.0",
+        },
+    },
+}
